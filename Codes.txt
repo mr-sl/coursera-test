@@ -1,0 +1,82 @@
+C:\Users\Ling Ling\coursera-test>git clone https://github.com/mr-sl/coursera-test.git
+
+git status
+---------------------
+git add .
+---------------------
+git commit -m "My First page."
+C:\Users\Ling Ling\coursera-test>git commit -m "My First page."
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Ling Ling@DESKTOP-QU77LVT.(none)')
+
+C:\Users\Ling Ling\coursera-test>git config --global user.email "mr.sl@hotmail.de"
+
+C:\Users\Ling Ling\coursera-test>git config --global user.name "mr-sl"
+
+C:\Users\Ling Ling\coursera-test>git commit -m "My First page."
+---------------------
+C:\Users\Ling Ling\coursera-test>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 395 bytes | 395.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mr-sl/coursera-test.git
+   cabf056..74f570c  master -> master
+
+C:\Users\Ling Ling\coursera-test>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   site/index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Ling Ling\coursera-test>git add site/index.html
+
+C:\Users\Ling Ling\coursera-test>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   site/index.html
+
+
+C:\Users\Ling Ling\coursera-test>git commit -m "Small addition to our page content."
+[master 5ba525f] Small addition to our page content.
+ 1 file changed, 9 insertions(+)
+
+C:\Users\Ling Ling\coursera-test>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\Ling Ling\coursera-test>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 409 bytes | 409.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mr-sl/coursera-test.git
+   74f570c..5ba525f  master -> master
+--------------------------------------
+C:\Users\Ling Ling\coursera-test\site>browser-sync start --server --directory --files "*"
