@@ -80,3 +80,7 @@ To https://github.com/mr-sl/coursera-test.git
    74f570c..5ba525f  master -> master
 --------------------------------------
 C:\Users\Ling Ling\coursera-test\site>browser-sync start --server --directory --files "*"
+
+git add .
+git status
+git push
