@@ -81,9 +81,12 @@ To https://github.com/mr-sl/coursera-test.git
 --------------------------------------
 C:\Users\Ling Ling\coursera-test\site>browser-sync start --server --directory --files "*"
 
+Update folders
+
 git add .
-git status
+git commit -m "description"
 git push
+git status
 
 Add new folder (folder must not be empty):
 create folder on local machine with a file inside
