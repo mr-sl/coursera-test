@@ -84,3 +84,12 @@ C:\Users\Ling Ling\coursera-test\site>browser-sync start --server --directory --
 git add .
 git status
 git push
+
+Add new folder (folder must not be empty):
+create folder on local machine with a file inside
+
+git add second-module-solution
+git add .
+git commit -m second-module-solution
+git push
+git status
